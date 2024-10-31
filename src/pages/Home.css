@@ -1,0 +1,47 @@
+.hero{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(./../food..jpg), linear-gradient(to left, #aca4a4, #635d5e,#141414);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    color: #dacccc;
+    display: flex;
+    align-items: center;
+    padding:2rem ;
+}
+
+.hero h5{
+    font-size: 3rem;
+    text-shadow: 0 0 3px #000;
+}
+
+.product{
+    padding: 3rem;
+}
+
+.products h4{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.products small{
+    width: 2vw;
+    height: 1vh;
+    display: block;
+    background-color: purple;
+}
+
+.products img{
+   min-height:10rem;
+   max-height: 10rem;
+    object-fit: contain;
+    filter: brightness(1.2);
+    transition: all 5s ease-in-out;
+}
+
+.products img:hover{
+    transform:scale(1.2);
+    transition:all 5s ease-in-out;
+}

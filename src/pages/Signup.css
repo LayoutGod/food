@@ -1,0 +1,9 @@
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 3%;
+    border-radius: 2%;
+}
