@@ -66,6 +66,7 @@ function Navbar() {
         </button>
         
         </Link>
+        <a href="https://server-tuei.onrender.com/admin/">Admin</a>
       </ul>
       
     </div>
