@@ -12,7 +12,7 @@ function Navbar() {
 
   useEffect(() => {
     if(localStorage.getItem("token") != null){
-    axios.get("http://localhost:8000/fetchuser/",{
+    axios.get("https://server-tuei.onrender.com/fetchuser/",{
       headers: {
         Authorization: `Bearer  ${localStorage.getItem("token")}` 
       }
@@ -47,7 +47,7 @@ function Navbar() {
 
         <h2>{user?.first_name}</h2>
         :
-        <img src={"http://localhost:8000/"+user?.image} alt=""/>
+        <img src={"https://server-tuei.onrender.com/"+user?.image} alt=""/>
 
 
         }

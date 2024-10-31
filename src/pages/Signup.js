@@ -12,7 +12,7 @@ function Signup() {
     e.preventDefault()
     let data = new FormData(e.currentTarget)
 
-    axios.post("http://127.0.0.1:8000/signup/", data)
+    axios.post("https://server-tuei.onrender.com/signup/", data)
     .then((response) => {
       localStorage.setItem("token", response.data.access)
     alert("signup successfull")

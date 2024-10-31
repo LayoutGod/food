@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault()
     let data = new FormData(e.currentTarget)
 
-    axios.post("http://127.0.0.1:8000/login/", data)
+    axios.post("https://server-tuei.onrender.com/login/", data)
     .then((response) => {
       localStorage.setItem("token", response.data.access)
     alert("login successfull")

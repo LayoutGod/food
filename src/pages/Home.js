@@ -17,7 +17,7 @@ function Home() {
   const cart = useSelector((state) => console.log(state))
 
   useEffect(() =>{
-    axios.get("http://127.0.0.1:8000/food/")
+    axios.get("https://server-tuei.onrender.com/food/")
     .then((response) => setfoods(response.data))
     .catch((error) =>console.log(error))
   }, [])
